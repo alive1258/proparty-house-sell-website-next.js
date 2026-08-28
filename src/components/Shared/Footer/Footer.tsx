@@ -1,7 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { MapPin, Mail, PhoneCall, ArrowUp, ShieldCheck, BadgeCheck } from "lucide-react";
+import {
+  MapPin,
+  Mail,
+  PhoneCall,
+  ArrowUp,
+  ShieldCheck,
+  BadgeCheck,
+} from "lucide-react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -61,7 +68,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-brand-900 text-white pt-20 pb-10 border-t border-white/5">
+    <footer className="bg-black text-white pt-20 pb-10 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
           {/* BRAND */}
@@ -70,10 +77,10 @@ const Footer = () => {
               <Link href="/#home" className="inline-flex">
                 <Logo variant="light" size="lg" />
               </Link>
-              <p className="mt-4 text-brand-100/70 text-sm max-w-sm leading-relaxed">
-                A full-service property marketplace connecting buyers,
-                renters, and investors with homes they&apos;ll love — backed
-                by agents who make every step simple.
+              <p className="mt-4 text-gray-300 text-sm max-w-sm leading-relaxed">
+                A full-service property marketplace connecting buyers, renters,
+                and investors with homes they&apos;ll love — backed by agents
+                who make every step simple.
               </p>
             </div>
 
@@ -84,7 +91,7 @@ const Footer = () => {
                   href={href}
                   onClick={href === "#" ? (e) => e.preventDefault() : undefined}
                   aria-label={label}
-                  className="flex items-center justify-center w-9 h-9 rounded-full bg-white/5 text-brand-100/70 hover:bg-brand-600 hover:text-white transition-colors"
+                  className="flex items-center justify-center w-9 h-9 rounded-full bg-white/5 text-gray-300 hover:bg-brand-600 hover:text-white transition-colors"
                 >
                   <Icon size={14} />
                 </a>
@@ -95,7 +102,7 @@ const Footer = () => {
               {CERTIFICATIONS.map(({ icon: Icon, label }) => (
                 <span
                   key={label}
-                  className="inline-flex items-center gap-2 text-xs text-brand-100/70"
+                  className="inline-flex items-center gap-2 text-xs text-gray-300"
                 >
                   <Icon size={14} className="text-gold-400" />
                   {label}
@@ -115,7 +122,7 @@ const Footer = () => {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-brand-100/70 hover:text-gold-400 text-sm transition-colors duration-300"
+                      className="text-gray-300 hover:text-gold-400 text-sm transition-colors duration-300"
                     >
                       {link.label}
                     </Link>
@@ -133,7 +140,7 @@ const Footer = () => {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-brand-100/70 hover:text-gold-400 text-sm transition-colors duration-300"
+                      className="text-gray-300 hover:text-gold-400 text-sm transition-colors duration-300"
                     >
                       {link.label}
                     </Link>
@@ -151,7 +158,7 @@ const Footer = () => {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-brand-100/70 hover:text-gold-400 text-sm transition-colors duration-300"
+                      className="text-gray-300 hover:text-gold-400 text-sm transition-colors duration-300"
                     >
                       {link.label}
                     </Link>
@@ -168,7 +175,7 @@ const Footer = () => {
                 <li>
                   <a
                     href={`tel:${CONTACT_PHONE.replace(/[^+\d]/g, "")}`}
-                    className="flex items-start gap-2.5 text-brand-100/70 hover:text-gold-400 text-sm transition-colors duration-300"
+                    className="flex items-start gap-2.5 text-gray-300 hover:text-gold-400 text-sm transition-colors duration-300"
                   >
                     <PhoneCall size={15} className="mt-0.5 shrink-0" />
                     {CONTACT_PHONE}
@@ -177,13 +184,13 @@ const Footer = () => {
                 <li>
                   <a
                     href={`mailto:${CONTACT_EMAIL}`}
-                    className="flex items-start gap-2.5 text-brand-100/70 hover:text-gold-400 text-sm transition-colors duration-300"
+                    className="flex items-start gap-2.5 text-gray-300 hover:text-gold-400 text-sm transition-colors duration-300"
                   >
                     <Mail size={15} className="mt-0.5 shrink-0" />
                     {CONTACT_EMAIL}
                   </a>
                 </li>
-                <li className="flex items-start gap-2.5 text-brand-100/70 text-sm">
+                <li className="flex items-start gap-2.5 text-gray-300 text-sm">
                   <MapPin size={15} className="mt-0.5 shrink-0" />
                   {OFFICE_ADDRESS}
                 </li>
@@ -194,9 +201,10 @@ const Footer = () => {
 
         {/* BOTTOM BAR */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-xs text-brand-100/60 text-center md:text-left">
-            © {currentYear} <span className="text-gold-400">Meridian Homes</span>.
-            All rights reserved.
+          <p className="text-xs text-gray-300 text-center md:text-left">
+            © {currentYear}{" "}
+            <span className="text-gold-400">Meridian Homes</span>. All rights
+            reserved.
           </p>
 
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
@@ -204,7 +212,7 @@ const Footer = () => {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-xs text-brand-100/60 hover:text-gold-400 transition-colors"
+                className="text-xs text-gray-300 hover:text-gold-400 transition-colors"
               >
                 {link.label}
               </Link>
@@ -213,10 +221,13 @@ const Footer = () => {
 
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-brand-100/60 hover:text-gold-400 transition-all group"
+            className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-gray-300 hover:text-gold-400 transition-all group"
           >
             Back to top
-            <ArrowUp size={12} className="group-hover:-translate-y-1 transition-transform" />
+            <ArrowUp
+              size={12}
+              className="group-hover:-translate-y-1 transition-transform"
+            />
           </button>
         </div>
       </div>

@@ -36,7 +36,7 @@ const TRUST_POINTS = [
 ];
 
 const HeroSection = () => (
-  <section className="relative overflow-hidden bg-brand-900 pb-16 pt-10 md:pb-24 md:pt-16">
+  <section className="relative overflow-hidden bg-gray-900 pb-16 pt-10 md:pb-24 md:pt-16">
     <Image
       src={"/images/caption.jpg"}
       alt="Downtown Dubai skyline at dusk"
@@ -45,8 +45,8 @@ const HeroSection = () => (
       sizes="100vw"
       className="o"
     />
-    <div className="absolute inset-0 bg-linear-to-r from-brand-900/95 via-brand-900/10 to-brand-900/10" />
-    {/* <div className="absolute inset-0 bg-linear-to-t from-brand-900 via-brand-900/20 to-transparent" /> */}
+    <div className="absolute inset-0 bg-linear-to-r from-gray-900/95 via-gray-900/20 to-gray-900/10" />
+    {/* <div className="absolute inset-0 bg-linear-to-t from-gray-900 via-gray-900/20 to-transparent" /> */}
 
     <div className="container relative">
       <div className="max-w-xl pt-4 md:pt-10">

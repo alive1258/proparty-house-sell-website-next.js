@@ -1,5 +1,6 @@
 export interface FeaturedProperty {
   id: string;
+  slug: string;
   status: "For Sale" | "For Rent";
   image: string;
   title: string;
@@ -17,6 +18,7 @@ export interface FeaturedProperty {
 export const FEATURED_PROPERTIES: FeaturedProperty[] = [
   {
     id: "1",
+    slug: "modern-family-villa-denver-co",
     status: "For Sale",
     image:
       "https://images.unsplash.com/photo-1706164971299-cfa23ec76083?fm=jpg&q=75&w=700&auto=format&fit=crop",
@@ -30,6 +32,7 @@ export const FEATURED_PROPERTIES: FeaturedProperty[] = [
   },
   {
     id: "2",
+    slug: "downtown-luxury-loft-seattle-wa",
     status: "For Rent",
     image:
       "https://images.unsplash.com/photo-1784456794764-910ad9d48a60?fm=jpg&q=75&w=700&auto=format&fit=crop",
@@ -43,6 +46,7 @@ export const FEATURED_PROPERTIES: FeaturedProperty[] = [
   },
   {
     id: "3",
+    slug: "oceanfront-estate-naples-fl",
     status: "For Sale",
     image:
       "https://images.unsplash.com/photo-1706164971293-2d58eb66242b?fm=jpg&q=75&w=700&auto=format&fit=crop",
@@ -56,6 +60,7 @@ export const FEATURED_PROPERTIES: FeaturedProperty[] = [
   },
   {
     id: "4",
+    slug: "city-view-apartment-portland-or",
     status: "For Rent",
     image:
       "https://images.unsplash.com/photo-1755735340764-3b077cab0c5c?fm=jpg&q=75&w=700&auto=format&fit=crop",
@@ -69,6 +74,7 @@ export const FEATURED_PROPERTIES: FeaturedProperty[] = [
   },
   {
     id: "5",
+    slug: "suburban-craftsman-home-austin-tx",
     status: "For Sale",
     image:
       "https://images.unsplash.com/photo-1568605114967-8130f3a36994?fm=jpg&q=75&w=700&auto=format&fit=crop",
@@ -82,6 +88,7 @@ export const FEATURED_PROPERTIES: FeaturedProperty[] = [
   },
   {
     id: "6",
+    slug: "modern-minimalist-house-phoenix-az",
     status: "For Rent",
     image:
       "https://images.unsplash.com/photo-1523217582562-09d0def993a6?fm=jpg&q=75&w=700&auto=format&fit=crop",
@@ -95,6 +102,7 @@ export const FEATURED_PROPERTIES: FeaturedProperty[] = [
   },
   {
     id: "7",
+    slug: "lakeside-retreat-minneapolis-mn",
     status: "For Sale",
     image:
       "https://images.unsplash.com/photo-1554995207-c18c203602cb?fm=jpg&q=75&w=700&auto=format&fit=crop",
@@ -108,6 +116,7 @@ export const FEATURED_PROPERTIES: FeaturedProperty[] = [
   },
   {
     id: "8",
+    slug: "riverside-townhouse-charlotte-nc",
     status: "For Rent",
     image:
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?fm=jpg&q=75&w=700&auto=format&fit=crop",

@@ -1,75 +1,75 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
-  Anchor,
   ArrowRight,
-  ChefHat,
-  Compass,
-  Globe2,
+  BadgePercent,
+  Building2,
   GraduationCap,
-  HeartHandshake,
-  Leaf,
-  Wrench,
+  Headset,
+  LineChart,
+  Megaphone,
+  Sparkles,
+  Users,
 } from "lucide-react";
 import PageHero from "@/src/components/Shared/PageHero/PageHero";
 
 export const metadata: Metadata = {
-  title: "Join the Team",
+  title: "Careers",
   description:
-    "Careers at Eco Yachts — deck and engineering crew, hospitality roles, shoreside operations, and sustainability positions across our fleet and offices.",
+    "Careers at Meridian Homes — licensed agent roles, property management, marketing, and client success positions across our offices.",
 };
 
 const ROLE_CATEGORIES = [
   {
-    icon: Anchor,
-    title: "Deck & Engineering Crew",
+    icon: Building2,
+    title: "Listing & Buyer's Agents",
     description:
-      "Captains, mates, engineers, and deckhands who keep the fleet running and guests safe on the water.",
+      "Licensed agents guiding clients through purchases, sales, and everything in between — commission-based with room to grow a book of business.",
   },
   {
-    icon: ChefHat,
-    title: "Hospitality & Service",
+    icon: Users,
+    title: "Property Management",
     description:
-      "Chefs, stewards, and stewardesses delivering five-star service on every charter, every season.",
+      "Portfolio managers and maintenance coordinators keeping owner properties leased, maintained, and compliant.",
   },
   {
-    icon: Compass,
-    title: "Shoreside Operations",
+    icon: Megaphone,
+    title: "Marketing & Design",
     description:
-      "Charter coordinators, logistics, and guest experience roles across our regional offices.",
+      "Photographers, copywriters, and designers who make every listing look like the best one on the block.",
   },
   {
-    icon: Leaf,
-    title: "Sustainability & Compliance",
+    icon: Headset,
+    title: "Client Success & Operations",
     description:
-      "Roles focused on emissions tracking, certification management, and partner vetting.",
+      "Transaction coordinators and support staff keeping paperwork, closings, and client communication on track.",
   },
 ];
 
 const BENEFITS = [
   {
+    icon: BadgePercent,
+    title: "Competitive Commission Splits",
+    description:
+      "Transparent, tiered commission structures that improve as you close more deals — no hidden desk fees.",
+  },
+  {
     icon: GraduationCap,
-    title: "Structured Training",
+    title: "Ongoing Training & Mentorship",
     description:
-      "Every crew hire goes through our training program — see Crew Services for the full curriculum.",
+      "New agents are paired with a senior mentor and get access to our full onboarding and CE curriculum.",
   },
   {
-    icon: Globe2,
-    title: "Seasonal Variety",
+    icon: LineChart,
+    title: "Real Growth Paths",
     description:
-      "Rotate across Mediterranean, Caribbean, and Middle East itineraries depending on the season.",
+      "Move from agent to team lead to office manager — our senior leadership started exactly where you are.",
   },
   {
-    icon: HeartHandshake,
-    title: "Career Pathways",
+    icon: Sparkles,
+    title: "Modern Tools & CRM",
     description:
-      "Clear progression from entry-level deck and service roles up to senior crew and shoreside management.",
-  },
-  {
-    icon: Wrench,
-    title: "Modern Fleet",
-    description:
-      "Work on hybrid-electric and eco-certified vessels, not aging diesel tonnage.",
+      "Lead routing, e-signatures, and a CRM that actually works, so you spend time with clients, not paperwork.",
   },
 ];
 
@@ -79,9 +79,9 @@ export default function CareersPage() {
       <PageHero
         eyebrow="About Us"
         title="Join the Team"
-        subtitle="We hire crew and shoreside staff who care about the same thing we do: a genuinely good charter that doesn't cost the earth."
-        image="/images/experiences/exp-35.jpg"
-        alt="Crew at work aboard an Eco Yachts vessel"
+        subtitle="We hire licensed agents and shoreside staff who care about the same thing we do: a genuinely good client experience, every time."
+        image="https://images.unsplash.com/photo-1521791136064-7986c2920216?fm=jpg&q=80&w=1800&auto=format&fit=crop"
+        alt="Real estate team collaborating in an office"
       />
 
       {/* ROLE CATEGORIES */}
@@ -92,7 +92,7 @@ export default function CareersPage() {
               Where You&apos;d Fit
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-brand-900">
-              Roles Across the Fleet and Offices
+              Roles Across the Brokerage
             </h2>
           </div>
 
@@ -121,7 +121,7 @@ export default function CareersPage() {
       <section className="bg-brand-50/50 py-16 md:py-24">
         <div className="container">
           <h2 className="text-2xl sm:text-3xl font-bold text-brand-900">
-            Why Crew With Eco Yachts
+            Why Agents Choose Meridian Homes
           </h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {BENEFITS.map(({ icon: Icon, title, description }) => (
@@ -148,22 +148,22 @@ export default function CareersPage() {
             Ready to Apply?
           </h2>
           <p className="max-w-lg text-brand-100/80">
-            Send us your CV and the role you&apos;re interested in — our crew
-            placement team will follow up directly.
+            Send us your resume and the role you&apos;re interested in — our
+            team will follow up directly.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 rounded-lg bg-gold-500 px-6 py-3 text-sm font-semibold text-brand-900 transition hover:bg-gold-400"
             >
-              Send Your CV
+              Send Your Resume
               <ArrowRight size={16} />
             </Link>
             <Link
-              href="/crew-services/recruitment"
+              href="/about/agents"
               className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
             >
-              How Recruitment Works
+              Meet the Team
             </Link>
           </div>
         </div>

@@ -14,11 +14,12 @@ const RootTemplet = () => (
   <>
     <HeroSection />
     <PropertyCategories />
+    <PopularLocations />
     <FeaturedListings />
     <HowItWorks />
     <WhyChooseUs />
     <LifestyleSection />
-    <PopularLocations />
+
     <TestimonialsSection />
     <MeetAgents />
     <FaqSection />

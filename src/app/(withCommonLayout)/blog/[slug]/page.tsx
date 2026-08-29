@@ -231,7 +231,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
         <section className="bg-brand-50/50 py-16 md:py-24">
           <div className="container">
             <h2 className="text-2xl sm:text-3xl font-bold text-brand-900">
-              More Sailing Insights
+              More From the Blog
             </h2>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {relatedPosts.map((related) => (
@@ -270,16 +270,16 @@ export default async function BlogDetailPage({ params }: PageProps) {
       <section className="bg-brand-900 py-16 md:py-20">
         <div className="container flex flex-col items-center text-center gap-5">
           <h2 className="text-3xl sm:text-4xl font-bold text-white">
-            Ready to Plan Your Own Charter?
+            Ready to Start Your Search?
           </h2>
           <p className="max-w-lg text-brand-100/80">
-            Browse the fleet or talk to our team about your next itinerary.
+            Browse current listings or talk to our team about your next move.
           </p>
           <Link
-            href="/yachts"
+            href="/properties"
             className="inline-flex items-center gap-2 rounded-lg bg-gold-500 px-6 py-3 text-sm font-semibold text-brand-900 transition hover:bg-gold-400"
           >
-            Browse the Fleet
+            Browse Properties
             <ArrowRight size={16} />
           </Link>
         </div>

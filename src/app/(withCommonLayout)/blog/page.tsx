@@ -8,10 +8,11 @@ import type { BlogPaginatedResponse } from "@/src/types/blogType";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Sailing insights and stories from Eco Yachts — sustainable travel, eco-friendly destinations, fleet technology, and life aboard the charter.",
+    "Real estate insights from Meridian Homes — market updates, buying and selling tips, and neighborhood guides.",
 };
 
-const FALLBACK_HERO_IMAGE = "/images/experiences/exp-savannah.jpg";
+const FALLBACK_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1560518883-ce09059eeffa?fm=jpg&q=80&w=1800&auto=format&fit=crop";
 
 async function getActiveBlogPosts() {
   try {
@@ -44,10 +45,10 @@ export default async function BlogPage() {
     <>
       <PageHero
         eyebrow="Blog"
-        title="Sailing Insights & Stories"
-        subtitle="Notes on sustainable travel, the destinations worth protecting, and how the Eco Yachts fleet actually works."
+        title="Real Estate Insights & Stories"
+        subtitle="Market updates, buying and selling tips, and neighborhood guides from the Meridian Homes team."
         image={posts[0]?.image ?? FALLBACK_HERO_IMAGE}
-        alt="Coastal scenery representing Eco Yachts editorial content"
+        alt="Modern home representing Meridian Homes editorial content"
       />
 
       <section className="bg-white py-16 md:py-24">
@@ -111,13 +112,14 @@ export default async function BlogPage() {
             Ready to See It for Yourself?
           </h2>
           <p className="max-w-lg text-brand-100/80">
-            Browse the fleet and find the yacht that fits your next charter.
+            Browse current listings and find the home that fits your next
+            move.
           </p>
           <Link
-            href="/yachts"
+            href="/properties"
             className="inline-flex items-center gap-2 rounded-lg bg-gold-500 px-6 py-3 text-sm font-semibold text-brand-900 transition hover:bg-gold-400"
           >
-            Browse the Fleet
+            Browse Properties
             <ArrowRight size={16} />
           </Link>
         </div>
